@@ -15,15 +15,19 @@
                         <div class="post-boxed__main">
                             <h3 class="post-boxed__title"><a>@item.Titlo</a></h3>
                             <p>@item.Comentario</p>
-                            <div class="">
-                                @for(int cont = 0; cont == item.Avaliacao; cont++)
+                            <div>
+                                @for (int cont = 1; cont <= 5; cont++)
                                 {
-                                    <img src="~/img/star1.png" />
-                                    if(cont == item.Avaliacao && cont<5)
+                                    if (cont <= item.Avaliacao)
+                                    {
+                                        <img src="~/img/star1.png" />
+                                    }
+                                    else
                                     {
                                         <img src="~/img/star0.png" />
                                     }
                                 }
+                                    | <span class="label label-warning">@item.Avaliacao</span>
                             </div>
                         </div>
                         <div class="post-boxed__aside">
