@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Fotografia.Models.Slide>
+
+@{
+    ViewData["Title"] = "Default";
+}
+<section class="section text-center">
+    <!-- Slick Carousel-->
+    <div class="slick-wrap">
+        <div class="slick-slider slick-style-1" data-arrows="true" data-autoplay="true" data-loop="true" data-dots="true" data-swipe="true" data-xs-swipe="true" data-sm-swipe="false" data-items="1" data-sm-items="3" data-md-items="3" data-lg-items="3" data-center-mode="true" data-lightgallery="group-slick">
+            @foreach (var item in Model)
+            {
+                <div class="item">
+                    <div class="slick-slide-inner">
+                        <div class="slick-slide-caption">
+                            <a class="thumb-ann thumb-mixed_large" href="~/img/index/@item.Imagem" data-lightgallery="item">
+                                <img class="thumb-ann__image" src="~/img/index/@item.Imagem" alt="" />
+                                <div class="thumb-ann__caption">
+                                    <p class="thumb-ann__title heading-3">@item.Titlo</p>
+                                    <p class="thumb-ann__text">@item.Descricao</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
