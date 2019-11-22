@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Fotografia.Models.AvaliacaoCliente>
+
+@{
+    ViewData["Title"] = "Default";
+}
+
+<section class="section section-md bg-gray-lighter text-center">
+    <div class="shell">
+        <p class="heading-1">Avaliações</p>
+        <div class="range range-30">
+            @foreach (var item in Model)
+            {
+                <div class="cell-sm-6 cell-md-4 wow fadeInLeftSmall">
+                    <article class="post-boxed">
+                        <div class="post-boxed__main">
+                            <h3 class="post-boxed__title"><a>@item.Titlo</a></h3>
+                            <p>@item.Comentario</p>
+                            <div class="">
+                                @for(int cont = 0; cont == item.Avaliacao; cont++)
+                                {
+                                    <img src="~/img/star1.png" />
+                                    if(cont == item.Avaliacao && cont<5)
+                                    {
+                                        <img src="~/img/star0.png" />
+                                    }
+                                }
+                            </div>
+                        </div>
+                        <div class="post-boxed__aside">
+                            <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+                                <div class="unit__left">
+                                    <img class="post-boxed__avatar" src="@item.ImagemCliente" alt="" width="46" height="46" />
+                                </div>
+                                <div class="unit__body">
+                                    <h6 class="text-uppercase">by @item.NomeCliente</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            }
+        </div>
+    </div>
+</section>

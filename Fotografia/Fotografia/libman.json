@@ -26,6 +26,10 @@
         "fonts/fontawesome-webfont.woff2",
         "fonts/FontAwesome.otf"
       ]
+    },
+    {
+      "library": "material-design-iconic-font@2.2.0",
+      "destination": "wwwroot/fonts/"
     }
   ]
 }
