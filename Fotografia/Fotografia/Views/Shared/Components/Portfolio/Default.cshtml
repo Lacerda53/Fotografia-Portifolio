@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Fotografia.Models.Portfolio>
+
+@{
+    ViewData["Title"] = "Default";
+}
+<section class="section section-md bg-white text-center">
+    <div class="shell-fluid">
+        <p class="heading-1">Portfolio</p>
+        <div class="isotope thumb-ruby-wrap wow fadeIn" data-isotope-layout="masonry" data-isotope-group="gallery" data-lightgallery="group">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    if (item.Posicao == 1)
+                    {
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
+                            <a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="@item.Imagem" data-lightgallery="item">
+                                <img class="thumb-ruby__image" src="@item.Imagem" alt="" width="440" height="327" />
+                                <div class="thumb-ruby__caption">
+                                    <p class="thumb-ruby__title heading-3">@item.Titlo</p>
+                                    <p class="thumb-ruby__text">@item.Comentario</p>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                    if (item.Posicao == 2)
+                    {
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
+                            <a class="thumb-ruby thumb-mixed_height-3 thumb-mixed_md" href="@item.Imagem" data-lightgallery="item">
+                                <img class="thumb-ruby__image" src="@item.Imagem" alt="" width="444" height="683" />
+                                <div class="thumb-ruby__caption">
+                                    <p class="thumb-ruby__title heading-3">@item.Titlo</p>
+                                    <p class="thumb-ruby__text">@item.Comentario</p>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                    if (item.Posicao == 3)
+                    {
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
+                            <a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="@item.Imagem" data-lightgallery="item">
+                                <img class="thumb-ruby__image" src="@item.Imagem" alt="" width="440" height="327" />
+                                <div class="thumb-ruby__caption">
+                                    <p class="thumb-ruby__title heading-3">@item.Titlo</p>
+                                    <p class="thumb-ruby__text">@item.Comentario</p>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                    if (item.Posicao == 4)
+                    {
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
+                            <a class="thumb-ruby thumb-mixed_height-3 thumb-mixed_md" href="@item.Imagem" data-lightgallery="item">
+                                <img class="thumb-ruby__image" src="@item.Imagem" alt="" width="444" height="683" />
+                                <div class="thumb-ruby__caption">
+                                    <p class="thumb-ruby__title heading-3">@item.Titlo</p>
+                                    <p class="thumb-ruby__text">@item.Comentario</p>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                    if (item.Posicao == 5)
+                    {
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
+                            <a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="@item.Imagem" data-lightgallery="item">
+                                <img class="thumb-ruby__image" src="@item.Imagem" alt="" width="440" height="327" />
+                                <div class="thumb-ruby__caption">
+                                    <p class="thumb-ruby__title heading-3">@item.Titlo</p>
+                                    <p class="thumb-ruby__text">@item.Comentario</p>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                    if (item.Posicao == 6)
+                    {
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
+                            <a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="@item.Imagem" data-lightgallery="item">
+                                <img class="thumb-ruby__image" src="@item.Imagem" alt="" width="440" height="327" />
+                                <div class="thumb-ruby__caption">
+                                    <p class="thumb-ruby__title heading-3">@item.Titlo</p>
+                                    <p class="thumb-ruby__text">@item.Comentario</p>
+                                </div>
+                            </a>
+                        </div>
+                    }
+
+                }
+            </div>
+        </div>
+    </div>
+</section>

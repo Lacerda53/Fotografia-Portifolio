@@ -7,31 +7,23 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="pt-br">
 <head>
-    <!-- Site Title-->
     <title>Mayra Lacerda | @ViewData["Title"]</title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta charset="utf-8">
-    <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic%7CJosefin+Sans:400,700,300italic">
     <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="~/lib/font-awesome/css/fontawesome.css" rel="stylesheet" />
     <link href="~/css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- Page-->
     <div class="page">
-        <!-- Page header-->
         <header class="section page-header">
-            <!-- RD Navbar-->
             <div class="rd-navbar-wrap">
                 <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="5px" data-lg-stick-up-offset="5px" data-md-stick-up="true" data-lg-stick-up="true">
                     <div class="rd-navbar-main-outer">
                         <div class="rd-navbar-main">
-                            <!-- RD Navbar Panel-->
                             <div class="rd-navbar-panel">
                                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
-                                <!-- RD Navbar Brand-->
                                 <div class="rd-navbar-brand">
                                     <a class="brand" href="index.html">
                                         <div class="brand__name">
@@ -49,10 +41,9 @@
                                         <li><a class="icon icon-sm fa fa-whatsapp icon-style-camera" href="https://api.whatsapp.com/send?phone=5594992684466"><span></span><span></span><span></span><span></span></a></li>
                                     </ul>
                                 </div>
-                                <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
                                     <li class="active">
-                                        <a href="index.html">Início<span></span><span></span><span></span><span></span></a>
+                                        <a asp-controller="Home" asp-action="Index">Início<span></span><span></span><span></span><span></span></a>
                                     </li>
                                     <li>
                                         <a href="about-me.html">Sobre Mim<span></span><span></span><span></span><span></span></a>
@@ -104,7 +95,7 @@
             </div>
         </section>
 
-        <!-- Awards-->
+        <!-- Conquistas -->
         <section class="section parallax-container bg-image-dark" data-parallax-img="https://livedemo00.template-help.com/wt_64615_v1/images/bg-image-7-1920x1244.jpg">
             <div class="parallax-content">
                 <div class="section-md text-center">
@@ -154,69 +145,7 @@
 
 
         <!-- Portfolio-->
-        <section class="section section-md bg-white text-center">
-            <div class="shell-fluid">
-                <p class="heading-1">Portfolio</p>
-                <div class="isotope thumb-ruby-wrap wow fadeIn" data-isotope-layout="masonry" data-isotope-group="gallery" data-lightgallery="group">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
-                            <a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="images/gallery-image-1-1200x800-original.jpg" data-lightgallery="item">
-                                <img class="thumb-ruby__image" src="images/gallery-image-1-440x327.jpg" alt="" width="440" height="327" />
-                                <div class="thumb-ruby__caption">
-                                    <p class="thumb-ruby__title heading-3">Image #</p>
-                                    <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
-                            <a class="thumb-ruby thumb-mixed_height-3 thumb-mixed_md" href="images/gallery-image-9-1200x800-original.jpg" data-lightgallery="item">
-                                <img class="thumb-ruby__image" src="images/gallery-image-9-444x683.jpg" alt="" width="444" height="683" />
-                                <div class="thumb-ruby__caption">
-                                    <p class="thumb-ruby__title heading-3">Image #</p>
-                                    <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
-                            <a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="images/gallery-image-15-1200x801-original.jpg" data-lightgallery="item">
-                                <img class="thumb-ruby__image" src="images/gallery-image-15-440x327.jpg" alt="" width="440" height="327" />
-                                <div class="thumb-ruby__caption">
-                                    <p class="thumb-ruby__title heading-3">Image #</p>
-                                    <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
-                            <a class="thumb-ruby thumb-mixed_height-3 thumb-mixed_md" href="images/gallery-image-10-835x1200-original.jpg" data-lightgallery="item">
-                                <img class="thumb-ruby__image" src="images/gallery-image-10-444x683.jpg" alt="" width="444" height="683" />
-                                <div class="thumb-ruby__caption">
-                                    <p class="thumb-ruby__title heading-3">Image #</p>
-                                    <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
-                            <a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="images/gallery-image-14-1200x800-original.jpg" data-lightgallery="item">
-                                <img class="thumb-ruby__image" src="images/gallery-image-14-440x327.jpg" alt="" width="440" height="327" />
-                                <div class="thumb-ruby__caption">
-                                    <p class="thumb-ruby__title heading-3">Image #</p>
-                                    <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
-                            <a class="thumb-ruby thumb-mixed_height-2 thumb-mixed_md" href="images/gallery-image-2-1200x800-original.jpg" data-lightgallery="item">
-                                <img class="thumb-ruby__image" src="images/gallery-image-2-440x327.jpg" alt="" width="440" height="327" />
-                                <div class="thumb-ruby__caption">
-                                    <p class="thumb-ruby__title heading-3">Image #</p>
-                                    <p class="thumb-ruby__text">If you are looking for high quality wedding photography, I will be glad to help you.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        @await Component.InvokeAsync("Portfolio")
 
         <!-- Avaliação Cliente -->
         @await Component.InvokeAsync("AvaliacaoCliente")
